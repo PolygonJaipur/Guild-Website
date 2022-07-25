@@ -4,9 +4,9 @@
 
 @layer base {
   * {
-    @apply scroll-smooth
+    @apply scroll-smooth 
   }
-}
-.display-none {
-
+  button {
+    @apply rounded-xl border-2 border-[#9747FF26] dark:border-[#1d005659] bg-[#b18dffb5] text-black dark:bg-[#3700A9] dark:text-white hover:scale-105 ease-in duration-300
+  }
 }
