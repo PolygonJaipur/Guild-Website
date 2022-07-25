@@ -4,6 +4,9 @@
 
 @layer base {
   * {
-    @apply bg-black
+    @apply scroll-smooth
   }
+}
+.display-none {
+
 }
