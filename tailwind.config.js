@@ -5,7 +5,12 @@ module.exports = {
     "./components/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      backgroundImage: {
+        "light" : "url('../public/home/light_bg.png')",
+        "dark" : "url('../public/home/dark_bg.png')",
+      }
+    },
   },
   plugins: [],
   darkMode: 'class',

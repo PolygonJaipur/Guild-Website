@@ -8,11 +8,10 @@ import logo_dark from '../public/navbar_icon/logo_dark.png'
 import Link from 'next/link';
 
 const Navbar = () => {
-    const {theme,setTheme} = useTheme()
-
+    const {theme,setTheme} = useTheme("light")
   return (
     <div>
-      <div className="bg-gradient-to-r from-[#60009455] via-[#1f004b46] to-[#00000036]">
+      <div className="bg-gradient-to-r from-[#fbc7d48e] via-[#e3bdff7d] to-[#c4acff70]">
         <div className="flex items-start px-10 py-2 justify-between">
           <div className="p-2">
             <Image
