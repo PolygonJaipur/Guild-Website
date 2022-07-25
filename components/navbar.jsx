@@ -11,8 +11,8 @@ const currentTheme = ""
 const Navbar = () => {
     const {theme,setTheme} = useTheme("light")    
   return (
-    <div className="w-full">
-      <div className="bg-gradient-to-r from-[#60009484] via-[#6f00bf84] to-[#00000078] z-100">
+    <div className="w-full bg-[#fde6ec] dark:bg-[#000000]">
+      <div className="bg-gradient-to-r from-[#60009484] via-[#6f00bf84] to-[#00000078] z-100 ">
         <div className="flex items-start px-10 py-2 justify-between">
           <div className="p-2">
             <Image
@@ -43,7 +43,7 @@ const Navbar = () => {
             </Link>
           </div>
           <div className="py-2">
-            <button className="text-center py-3 rounded-3xl text-gray-900 font-bold text-sm px-5 cursor-pointer hover:scale-105 ease-in duration-200">
+            <button className="text-center py-3 rounded-3xl text-sm px-5 cursor-pointer hover:scale-105 ease-in duration-200">
               Join Guild
             </button>
           </div>
