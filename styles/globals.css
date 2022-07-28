@@ -4,9 +4,15 @@
 
 @layer base {
   * {
-    @apply scroll-smooth 
+    @apply scroll-smooth tracking-widest
   }
   button {
-    @apply rounded-xl border-2 border-[#9747FF26] dark:border-[#1d005659] bg-[#b18dffb5] text-black dark:bg-[#3700A9] dark:text-white hover:scale-105 ease-in duration-300
+    @apply rounded-xl border-2 border-[#9747FF26] dark:border-[#1d005659] bg-[#7a3bbcb5]  dark:bg-[#3700A9] hover:scale-105 ease-in duration-300 text-white
+  }
+  h1 {
+    @apply font-bold text-6xl text-center text-gray-900 dark:text-gray-300 
+  }
+  p {
+    @apply text-center dark:text-gray-500 text-gray-800
   }
 }

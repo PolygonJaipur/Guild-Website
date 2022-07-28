@@ -1,5 +1,5 @@
 import Image from 'next/image';
-import React from 'react'
+import React, { useState } from 'react'
 import moon_Icon from '../public/navbar_icon/moon_icon.svg'
 import sun_Icon from '../public/navbar_icon/sun_icon.svg'
 import { useTheme } from 'next-themes';
@@ -7,12 +7,12 @@ import logo_light from '../public/navbar_icon/logo_light.png'
 import logo_dark from '../public/navbar_icon/logo_dark.png'
 import Link from 'next/link';
 
+const currentTheme = ""
 const Navbar = () => {
-    const {theme,setTheme} = useTheme()
-
+    const {theme,setTheme} = useTheme("light")    
   return (
-    <div>
-      <div className="bg-gradient-to-r from-[#60009455] via-[#1f004b46] to-[#00000036]">
+    <div className="w-full bg-[#fde6ec] dark:bg-[#000000]">
+      <div className="bg-gradient-to-r from-[#60009484] via-[#6f00bf84] to-[#00000078] z-100 ">
         <div className="flex items-start px-10 py-2 justify-between">
           <div className="p-2">
             <Image
@@ -43,7 +43,7 @@ const Navbar = () => {
             </Link>
           </div>
           <div className="py-2">
-            <button className="text-center py-3 rounded-3xl text-gray-900 font-bold text-sm px-5 cursor-pointer hover:scale-105 ease-in duration-200">
+            <button className="text-center py-3 rounded-3xl text-sm px-5 cursor-pointer hover:scale-105 ease-in duration-200">
               Join Guild
             </button>
           </div>
@@ -64,3 +64,6 @@ const Navbar = () => {
 }
 
 export default Navbar
+export {currentTheme}
+
+//bg-gradient-to-r from-[#fbc7d48e] via-[#e3bdff7d] to-[#c4acff70]
