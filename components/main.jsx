@@ -7,7 +7,7 @@ import Footer from './footer';
 const Main = () => {
   return (
     <div id="home" className="relative bg-[#fde6ec] dark:bg-[#000000]">
-      <Image src={dark_bg} className="w-full h-full object-cover " />
+      <Image src={dark_bg} className="object-cover " height="720vh" width="1440vw"/>
       <div className="absolute top-[30%] left-[50%] translate-x-[-50%] translate-y-[-50%]">
         <h1 className='py-4 my-4'>Lorem ipsum dolor sit amet</h1>
         <p>

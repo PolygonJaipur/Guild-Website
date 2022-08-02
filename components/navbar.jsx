@@ -12,7 +12,7 @@ const Navbar = () => {
     const {theme,setTheme} = useTheme("light")    
   return (
     <div className="w-full bg-[#fde6ec] dark:bg-[#000000]">
-      <div className="bg-gradient-to-r from-[#60009484] via-[#6f00bf84] to-[#00000078] z-100 ">
+      <div className="bg-gradient-to-r from-[#60009484] via-[#6f00bf84] to-[#00000078] z-100  ">
         <div className="flex items-start px-10 py-2 justify-between">
           <div className="p-2">
             <Image
