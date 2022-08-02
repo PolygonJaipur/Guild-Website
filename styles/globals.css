@@ -6,8 +6,11 @@
   * {
     @apply scroll-smooth tracking-widest
   }
+  body {
+    @apply bg-gradient-to-r from-[#60009484] via-[#6f00bf84] to-[#00000078]
+  }
   button {
-    @apply rounded-xl border-2 border-[#9747FF26] dark:border-[#1d005659] bg-[#7a3bbcb5]  dark:bg-[#3700A9] hover:scale-105 ease-in duration-300 text-white
+    @apply rounded-xl border-2 border-[#9747FF26] dark:border-[#1d005659] bg-[#824abeb5]  dark:bg-[#3d09a4] hover:scale-105 ease-in duration-300 text-white 
   }
   h1 {
     @apply font-bold text-6xl text-center text-gray-900 dark:text-gray-300 
