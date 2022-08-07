@@ -11,7 +11,7 @@ const currentTheme = ""
 const Navbar = () => {
     const {theme,setTheme} = useTheme("light")    
   return (
-    <div className="w-full bg-[#fde6ec] dark:bg-[#000000]">
+    <div className="w-full h-20 bg-[#fde6ec] dark:bg-[#000000]">
       <div className="bg-gradient-to-r from-[#60009484] via-[#6f00bf84] to-[#00000078] z-100  ">
         <div className="flex items-start px-10 py-2 justify-between">
           <div className="p-2">
@@ -22,7 +22,7 @@ const Navbar = () => {
             />
           </div>
           <div className="font-medium cursor-pointer">
-            <Link href="/#home">
+            <Link href="/">
               <h3 className="ml-10 text-md flex justify-center py-4 items-center hover:scale-110 ease-in duration-200">
                 Home
               </h3>
