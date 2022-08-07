@@ -31,15 +31,15 @@ const About = () => {
       <article className='upcoming-events'>
         <h1>upcoming events</h1>
         <div className='events'>
-          <div className='event event-1'>
-            <span className='purple dark:text-white'>Instagram </span>
+          <div className='event event-1 dark:text-black'>
+            <span className='purple'>Instagram </span>
             launches nfts on polygon
           </div>
-          <div className='event event-2'>
+          <div className='event event-2 dark:text-black'>
             <span className='purple'>Stripe </span>
             launches global payouts with crypto using polygon
           </div>
-          <div className='event event-3 '>
+          <div className='event event-3 dark:text-black'>
             <span className='purple'>Adidas originals and prada </span>
             launches nft collection on polygon
           </div>
