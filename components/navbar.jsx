@@ -1,5 +1,5 @@
 import Image from 'next/image';
-import React, { useState } from 'react'
+import React from 'react'
 import moon_Icon from '../public/navbar_icon/moon_icon.svg'
 import sun_Icon from '../public/navbar_icon/sun_icon.svg'
 import { useTheme } from 'next-themes';
@@ -10,10 +10,10 @@ import Link from 'next/link';
 const currentTheme = ""
 const Navbar = () => {
     const {theme,setTheme} = useTheme("light")
-    const [color,setColor] = useState('light')    
+      
   return (
-    <div className="w-full h-20 fixed z-10 ">
-      <div className=" z-100">
+    <div className="w-full h-20 z-10 bg-[#fbc3ffd8] dark:bg-[#060309db]">
+      <div className="bg-gradient-to-r from-[#7f00c362] via-[#6600bf56] to-[#00000054] z-100">
         <div className="flex items-center px-10 py-2 justify-between">
           <div className="p-2">
             <Image
@@ -44,16 +44,17 @@ const Navbar = () => {
             </Link>
           </div>
           <div className="py-2">
-            <button className="text-center py-3 rounded-3xl text-sm px-5 cursor-pointer hover:scale-105 ease-in duration-200">
-              Join Guild
-            </button>
+            <Link href="/join-guild ">
+              <button className="text-center py-3 rounded-3xl text-sm px-5 cursor-pointer hover:scale-105 ease-in duration-200">
+                Join Guild
+              </button>
+            </Link>
           </div>
           <div className="flex">
             <div className="visible">
               <Image
                 onClick={() => {
                   setTheme(theme === "light" ? "dark" : "light");
-                  setColor(theme);
                 }}
                 className="moon cursor-pointer"
                 src={theme === "light" ? moon_Icon : sun_Icon}

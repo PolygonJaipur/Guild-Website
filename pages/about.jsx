@@ -1,7 +1,5 @@
 import React, { useState } from 'react';
 import { Slide } from 'react-slideshow-image';
-import { motion } from 'framer-motion';
-import { AnimatePresence } from 'framer-motion';
 import polygon_bg from '../public/rocket.png'
 import Footer from '../components/footer';
 import Image from 'next/image';
@@ -20,17 +18,15 @@ const slideImages = [
     caption: 'Slide 3',
   },
 ];
-const items = [{ id: 1, title: 'Yash Garg', subtitle: 'Convener' }];
 
 const About = () => {
-  const [selectedId, setSelectedId] = useState(null);
   return (
     <div
       id="learning"
-      className="h-full bg-gradient-to-b from-[#60009462] via-[#6f00bf56] to-[#00000054]"
+      className="h-full bg-gradient-to-br from-[#60009462] via-[#6f00bf56] to-[#00000054]"
     >
       <div>
-        <div className="p-20 items-center flex justify-center">
+        <div className="items-center flex justify-center">
           <Image
             src={polygon_bg}
             className="object-cover p-20 opacity-50"
@@ -38,7 +34,7 @@ const About = () => {
             width="900vw"
           />
         </div>
-        <div className="absolute top-[40%] left-[50%] translate-x-[-50%] translate-y-[-50%] bg-white/20 p-20 rounded-lg dark:bg-black/20">
+        <div className="absolute top-[35%] left-[50%] translate-x-[-50%] translate-y-[-50%] bg-white/20 p-20 rounded-lg dark:bg-black/20">
           <p className="text-[20px] w-[70vw]">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. In sit
             tempor nunc diam ut sit neque enim, rhoncus.
@@ -48,10 +44,10 @@ const About = () => {
             purus, pharetra, senectus.
           </p>
         </div>
-        <div className="absolute top-[70%] left-[50%] translate-x-[-50%] translate-y-[-50%]">
+        <div className="absolute top-[65%] left-[50%] translate-x-[-50%] translate-y-[-50%]">
           <h2 className="text-4xl font-bold">Upcoming events</h2>
         </div>
-        <div className="absolute top-[85%] left-[50%] translate-x-[-50%] translate-y-[-50%]">
+        <div className="absolute top-[80%] left-[50%] translate-x-[-50%] translate-y-[-50%]">
           <div className="flex justify-between items-center w-full">
             <div className="w-[300px] mx-10 h-[110px] bg-white/30 dark:bg-black/40 shadow-lg shadow-black/20 rounded-xl">
               <p className="p-4">
@@ -77,7 +73,7 @@ const About = () => {
         </div>
       </div>
       <div className="z-10">
-        <div className="img-container">
+        <div className="my-10">
           <h2 className="text-4xl font-bold flex text-center items-center justify-center">
             Event Gallery
           </h2>
@@ -93,6 +89,14 @@ const About = () => {
               ))}
             </Slide>
           </div>
+        </div>
+      </div>
+      <div className="z-10">
+        <div className="my-10">
+          <h2 className="text-4xl font-bold flex text-center items-center justify-center">
+            Meet our Team
+          </h2>
+          
         </div>
       </div>
       <div className="py-5 z-10">
