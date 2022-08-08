@@ -8,22 +8,24 @@ import discord from '../public/footer/discord.svg'
 function Footer() {
   return (
     <div className="flex items-center justify-between px-10">
-      <h1>  </h1>
-      <h4 className='pl-[230px] text-gray-900 dark:text-white'>© 2022 Polygon technology</h4>
+      <h1> </h1>
+      <h4 className="pl-[230px] text-gray-900 dark:text-white">
+        © 2022 Polygon technology
+      </h4>
       <div className="flex">
         <div className="px-4 cursor-pointer">
-          <Link href="#">
+          <Link href="https://www.linkedin.com/company/polygon-guild-jaipur/">
             <Image src={linkedin} alt="" />
           </Link>
         </div>
         <div className="px-4 cursor-pointer">
-          <Link href="#">
+          <Link href="https://twitter.com/PolygonJaipur">
             <Image src={twitter} alt="" />
           </Link>
         </div>
         <div className="px-4 cursor-pointer">
-          <Link href="#">
-            <Image src={discord} alt=""/>
+          <Link href="https://discord.gg/ushXYXBBPb">
+            <Image src={discord} alt="" />
           </Link>
         </div>
       </div>

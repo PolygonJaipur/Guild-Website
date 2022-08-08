@@ -1,5 +1,4 @@
 import React from 'react'
-import light_bg from '../public/home/light_bg.png'
 import dark_bg from '../public/bg.png'
 import Image from 'next/image';
 import Footer from './footer';
