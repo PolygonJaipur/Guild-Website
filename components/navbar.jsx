@@ -12,9 +12,9 @@ const Navbar = () => {
     const {theme,setTheme} = useTheme("light")
     const [color,setColor] = useState('light')    
   return (
-    <div className="w-full h-20 fixed z-10 ">
-      <div className=" z-100">
-        <div className="flex items-center px-10 py-2 justify-between">
+    <div className="w-full bg-[#fde6ec] dark:bg-[#000000]">
+      <div className="bg-gradient-to-r from-[#60009484] via-[#6f00bf84] to-[#00000078] z-100  ">
+        <div className="flex items-start px-10 py-2 justify-between">
           <div className="p-2">
             <Image
               src={theme === "light" ? logo_light : logo_dark}
@@ -23,8 +23,8 @@ const Navbar = () => {
             />
           </div>
           <div className="font-medium cursor-pointer">
-            <Link href="/">
-              <h3 className="px-5 hover:bg-white/40 hover:text-black dark:hover:text-black text-[#3b056a] dark:text-[#d8acff] rounded-2xl text-lg flex justify-center py-2 hover:shadow-xl items-center hover:scale-105 ease-in duration-300 ">
+            <Link href="/#home">
+              <h3 className="ml-10 text-md flex justify-center py-4 items-center hover:scale-110 ease-in duration-200">
                 Home
               </h3>
             </Link>

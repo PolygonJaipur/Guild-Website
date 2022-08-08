@@ -6,13 +6,10 @@ import Footer from './footer';
 
 const Main = () => {
   return (
-    <div
-      id="home"
-      className="relative bg-gradient-to-br from-[#fbf7fd55] via-[#1f004b46] to-[#00000036]"
-    >
-      <Image src={dark_bg} className="object-cover h-screen" />
-      <div className="absolute top-[35%] left-[50%] translate-x-[-50%] translate-y-[-50%]">
-        <h1 className="py-4 my-4 drop-shadow-lg">Lorem ipsum dolor sit amet</h1>
+    <div id="home" className="relative bg-[#fde6ec] dark:bg-[#000000]">
+      <Image src={dark_bg} className="object-cover " height="720vh" width="1440vw"/>
+      <div className="absolute top-[30%] left-[50%] translate-x-[-50%] translate-y-[-50%]">
+        <h1 className='py-4 my-4'>Lorem ipsum dolor sit amet</h1>
         <p>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. In sit tempor
           nunc diam ut sit neque enim, rhoncus.
