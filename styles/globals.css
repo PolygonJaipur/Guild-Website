@@ -4,18 +4,18 @@
 
 @layer base {
   * {
-    @apply scroll-smooth tracking-widest
+    @apply scroll-smooth tracking-widest drop-shadow-lg
   }
   body {
-    @apply bg-gradient-to-r from-[#60009484] via-[#6f00bf84] to-[#00000078]
+    @apply bg-[#fbc3ff] dark:bg-[#060309]
   }
   button {
-    @apply rounded-xl border-2 border-[#9747FF26] dark:border-[#1d005659] bg-[#824abeb5]  dark:bg-[#3d09a4] hover:scale-105 ease-in duration-300 text-white 
+    @apply rounded-xl border-2 border-transparent bg-[#824abecd]  dark:bg-[#430094af] hover:scale-105 ease-in duration-300 text-white shadow-md shadow-[#060309]
   }
   h1 {
-    @apply font-bold text-6xl text-center text-gray-900 dark:text-gray-300 
+    @apply font-bold text-6xl text-center text-black dark:text-gray-300 
   }
   p {
-    @apply text-center dark:text-gray-500 text-gray-800
+    @apply text-center text-lg dark:text-gray-400 text-gray-900
   }
 }

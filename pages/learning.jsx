@@ -7,16 +7,16 @@ const Learning = () => {
   return (
     <div
       id="learning"
-      className="relative h-[90vh] bg-[#fde6ec] dark:bg-[#000000]"
+      className="relative h-screen bg-gradient-to-b from-[#60009462] via-[#6f00bf56] to-[#00000054]"
     >
       <Image
         src={learn_bg}
-        className="object-cover opacity-50 "
-        height="700vh"
-        width="1440vw"
+        className="object-cover opacity-50"
+        height='750vh'
+        width='1500vw'
       />
-      <div className="absolute top-[40%] left-[50%] translate-x-[-50%] translate-y-[-50%]">
-        <h1 className="py-4 pb-8 my-4">Learning series</h1>
+      <div className="absolute top-[45%] left-[50%] translate-x-[-50%] translate-y-[-50%]">
+        <h1 className="py-4 pb-8 my-4 drop-shadow-lg">Learning series</h1>
         <p>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. In sit tempor
           nunc diam ut sit neque enim, rhoncus.
@@ -31,7 +31,7 @@ const Learning = () => {
           </button>
         </div>
       </div>
-      <div className="absolute top-[96%] w-full left-[50%] translate-x-[-50%] translate-y-[-50%]">
+      <div className="absolute top-[96%] w-full left-[50%] translate-x-[-50%] translate-y-[-50%] z-10">
         <Footer />
       </div>
     </div>
