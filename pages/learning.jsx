@@ -7,7 +7,7 @@ const Learning = () => {
   return (
     <div
       id="learning"
-      className="relative h-[90vh] bg-[#fde6ec] dark:bg-[#000000]"
+      className="relative h-screen bg-gradient-to-b from-[#60009462] via-[#6f00bf56] to-[#00000054]"
     >
       <Image
         src={learn_bg}
@@ -26,10 +26,9 @@ const Learning = () => {
           purus, pharetra, senectus.
         </p>
         <div className="mt-14 flex items-center justify-center">
-          <button className="text-center py-5 rounded-3xl text-sm px-14 cursor-pointer hover:scale-105 ease-in duration-200" >
+          <button className="text-center py-5 rounded-3xl text-sm px-14 cursor-pointer hover:scale-105 ease-in duration-200">
             Learning series
           </button>
-
         </div>
       </div>
       <div className="absolute top-[96%] w-full left-[50%] translate-x-[-50%] translate-y-[-50%] z-10">
