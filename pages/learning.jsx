@@ -33,7 +33,7 @@ const Learning = () => {
   return (
     <div
       id="learning"
-      className="relative h-full bg-gradient-to-b from-[#60009462] via-[#6f00bf56] to-[#00000054]"
+      className="relative h-full bg-gradient-to-b from-[#60009462] via-[#6f00bf56] to-[#00000054] z-[-1]"
     >
       <Image
         src={learn_bg}

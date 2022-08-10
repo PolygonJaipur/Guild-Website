@@ -7,11 +7,15 @@ const Main = () => {
   return (
     <div
       id="home"
-      className="relative bg-gradient-to-br from-[#fbf7fd55] via-[#1f004b46] to-[#00000036]"
+      className="md:relative bg-gradient-to-br from-[#fbf7fd55] via-[#1f004b46] to-[#00000036] z-[-2]"
     >
-      <Image src={dark_bg} className="object-cover h-screen" />
-      <div className="absolute top-[35%] left-[50%] translate-x-[-50%] translate-y-[-50%]">
-        <h1 className="py-4 my-4 drop-shadow-lg">Lorem ipsum dolor sit amet</h1>
+      <div className="hidden md:contents h-screen md:h-[111vh] z-[-2]">
+        <Image src={dark_bg} className="hidden md:object-cover md:h-screen" />
+      </div>
+      <div className="md:absolute  md:w-[50%] md:top-[35%] md:left-[50%] md:translate-x-[-50%] md:translate-y-[-50%] z-[-2]">
+        <h1 className="py-4 my-4 drop-shadow-lg ">
+          Lorem ipsum dolor sit amet
+        </h1>
         <p>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. In sit tempor
           nunc diam ut sit neque enim, rhoncus.
@@ -21,8 +25,8 @@ const Main = () => {
           purus, pharetra, senectus.
         </p>
       </div>
-      <div className="absolute top-[96%] w-full left-[50%] translate-x-[-50%] translate-y-[-50%]">
-        <Footer className="z-9" />
+      <div className="md:absolute md:top-[96%] w-[100px] md:w-full md:left-[50%] md:translate-x-[-50%] md:translate-y-[-50%] ">
+        <Footer className="" />
       </div>
     </div>
   );
