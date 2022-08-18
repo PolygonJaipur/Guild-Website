@@ -165,20 +165,27 @@ const About = () => {
         </div>
       </div>
       <div className='z-10'>
-        <div className='my-10 our-team'>
+        <div className='py-4 our-team'>
           <h2 className='text-4xl font-bold text-center '>Meet our Team</h2>
-          <div className='full-team'>
+          <div className='full-team p-10 px-20 grid md:grid-cols-2 grid-cols-1 gap-10 '>
             {teamMembers.map((member) => {
               const { id, img, name, position, text } = member;
               return (
-                <div className='member' key={id}>
-                  <div className='img-container'>
-                    <img src={img} alt='' className='member-img' />
+                <div
+                  className="member bg-gradient-to-b from-[#49007162] via-[#a900bf76] to-[#501b6d92] bg-white/50 dark:bg-black/30 p-5 rounded-xl shadow-xl flex flex-row"
+                  key={id}
+                >
+                  <div className="img-container h-auto w-[150%] rounded-xl ">
+                    <img
+                      src={img}
+                      alt=""
+                      className="member-img h-[100%] w-[100%] rounded-xl object-cover"
+                    />
                   </div>
-                  <div className='info-container'>
-                    <h2>{name}</h2>
-                    <h3>{position}</h3>
-                    <p>{text}</p>
+                  <div className="info-container text-black/70 dark:text-white/70 flex flex-col p-5">
+                    <h2 className="text-3xl ">{name}</h2>
+                    <h3 className="text-xl">{position}</h3>
+                    <p className="text-start text-sm">{text}</p>
                   </div>
                 </div>
               );
