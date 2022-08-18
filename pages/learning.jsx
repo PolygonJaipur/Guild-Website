@@ -33,7 +33,7 @@ const Learning = () => {
   return (
     <div
       id="learning"
-      className="relative h-full bg-gradient-to-b from-[#60009462] via-[#6f00bf56] to-[#00000054] z-[-1]"
+      className="relative h-full bg-gradient-to-b from-[#60009462] via-[#6f00bf56] to-[#00000054]"
     >
       <Image
         src={learn_bg}
@@ -55,8 +55,8 @@ const Learning = () => {
           onClick={handleForm}
           className="mt-14 flex items-center justify-center"
         >
-          <button className="text-center py-5 rounded-3xl text-sm px-14 cursor-pointer hover:scale-105 ease-in duration-200">
-            Learning series
+          <button className='text-center py-5 rounded-3xl text-sm px-14 cursor-pointer z-[100]'>
+            Learning Series
           </button>
         </div>
       </div>

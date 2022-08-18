@@ -26,7 +26,7 @@ const JoinGuild = () => {
     e.target.reset();
     }
   return (
-    <div className="bg-gradient-to-b from-[#c863fe62] via-[#6f00bf56] to-[#00000054] flex items-center justify-center rounded-xl">
+    <div className="bg-gradient-to-b from-[#c863fe62] via-[#6f00bf56] to-[#00000054] flex items-center flex-col justify-center rounded-xl">
       <div className="w-[60%] px-10 py-[10vh] rounded-xl">
         <div className="bg-gradient-to-b from-[#60009462] via-[#6f00bf56] to-[#00000054] rounded-xl">
           <div className="bg-[#ffffffb5] dark:bg-[#320155c9] rounded-xl">
@@ -116,6 +116,9 @@ const JoinGuild = () => {
             </div>
           </div>
         </div>
+      </div>
+      <div className="">
+        <Footer />
       </div>
     </div>
   );
